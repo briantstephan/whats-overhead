@@ -29,7 +29,7 @@ const PlaneCard = ({ closest, mode, loading }: PlaneCardProps) => {
   }
 
   const label = mode === 'near' ? 'Closest by distance' : 'Closest overhead';
-  const { plane, horizontalMeters, altitudeMeters, totalMeters, elevationRad, bearingDeg } = closest;
+  const { plane, altitudeMeters, totalMeters, elevationRad, bearingDeg } = closest;
   const elevationDeg = toDegrees(elevationRad);
 
   return (
